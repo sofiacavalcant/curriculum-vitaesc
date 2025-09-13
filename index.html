@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Currículo — Sofia Cavalcante</title>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: rgba(75,0,130,0.8);
+  --bg: #fdfdfd;
+  --card: #ffffff;
+  --text: #333;
+  --muted: #666;
+  --radius: 12px;
+  --maxw: 900px;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:'Fira Code', monospace;
+  background: var(--bg);
+  color: var(--text);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  flex-direction:column;
+  padding:0 20px;
+  position: relative;
+  overflow: hidden;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+.symbol {
+  position: absolute;
+  color: rgba(75,0,130,0.3);
+  font-weight: bold;
+  animation: float linear infinite;
+}
+@keyframes float {
+  0% { transform: translateY(100%); opacity:0.3; }
+  50% { opacity:0.5; }
+  100% { transform: translateY(-10%); opacity:0.3; }
+}
+.hero h1{
+  font-family:'Playfair Display', serif;
+  font-size:90px;
+  font-weight:900;
+  color: rgba(75,0,130,0.9);
+  z-index: 1;
+  position: relative;
+}
+.hero p{
+  font-size:20px;
+  color:var(--muted);
+  margin-top:15px;
+  max-width:600px;
+  z-index:1;
+  position: relative;
+}
+main.container{
+  max-width:var(--maxw);
+  margin:0 auto 50px auto;
+  padding:0 15px;
+}
+section{
+  margin:40px 0;
+}
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:25px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.05);
+}
+h2{
+  font-family:'Playfair Display', serif;
+  margin:0 0 12px 0;
+  font-size:22px;
+  font-weight:700;
+  color:var(--primary);
+}
+p, li{
+  margin:6px 0;
+  font-size:15px;
+  color:var(--text);
+}
+ul{padding-left:20px;}
+.contact a{
+  color:var(--primary);
+  text-decoration:none;
+}
+.contact a:hover{text-decoration:underline;}
+footer{
+  text-align:center;
+  padding:20px 10px;
+  font-size:13px;
+  color:var(--muted);
+  border-top:1px solid #eee;
+  margin-top:40px;
+}
+@media(max-width:720px){
+  .hero h1{font-size:60px;}
+  .hero p{font-size:16px;}
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="background" id="background"></div>
+  <h1>Sofia Cavalcante</h1>
+  <p>Estudante de Tecnologia, atuante no universo de telecomunicações e gestão de projetos, apaixonada por aprendizado contínuo e inovações tecnológicas.</p>
+</div>
+<main class="container">
+  <section id="sobre" class="card">
+    <h2>Sobre Mim</h2>
+    <p>Sou estudante de tecnologia, motivada por aprendizado contínuo e desafios que impulsionam meu crescimento profissional. Tenho experiência em documentação, análise de demandas e uso de ferramentas de gestão, além de buscar constantemente aprimorar meus conhecimentos em Python, Java, Power BI e metodologias de qualidade de software. Valorizo soluções criativas e eficientes, sempre com foco em resultados positivos e impacto significativo.</p>
+  </section>
+  <section id="formacao" class="card">
+    <h2>Formação e Cursos</h2>
+    <ul>
+      <li><strong>Instituto Federal da Paraíba – IFPB, Campus Campina Grande</strong></li>
+      <li>Curso Técnico em Informática (Subsequente) — 2023–2026 (em andamento)</li>
+      <li>Quality Assurance: plano de testes e gestão de bugs — 2025</li>
+      <li>Qualidade de Software: escrevendo testes de maneira eficiente — 2025</li>
+      <li>Power BI: conhecendo o serviço — 2025</li>
+      <li>Data Visualization: criando gráficos com bibliotecas Python — 2025</li>
+    </ul>
+  </section>
+  <section id="experiencia" class="card">
+    <h2>Experiência Profissional</h2>
+    <p><strong>Jovem Aprendiz PMO, Projeto de redes FTTH — Proxxima Telecom (2024 – Atual)</strong></p>
+    <ul>
+      <li>Documentação de projetos e processos da área de PMO.</li>
+      <li>Controle de cronogramas e acompanhamento de demandas.</li>
+      <li>Atualização de planilhas para monitoramento de atividades.</li>
+      <li>Utilização de GeoGrid e QGIS para análise de rede.</li>
+      <li>Padronização de fluxos operacionais e documentação.</li>
+    </ul>
+  </section>
+  <section id="competencias" class="card">
+    <h2>Competências</h2>
+    <ul>
+      <li>Gestão de projetos e planejamento</li>
+      <li>Documentação técnica</li>
+      <li>Análise de demandas</li>
+      <li>GIS: GeoGrid, QGIS</li>
+      <li>Excel e manipulação de planilhas</li>
+      <li>Visualização de dados (Power BI, Python)</li>
+      <li>Testes de software / QA</li>
+    </ul>
+  </section>
+  <section id="projetos" class="card">
+    <h2>Projetos Relevantes</h2>
+    <p><strong>Projeto de Realidade Virtual (VR) — Participante</strong></p>
+    <p>Contribuí na criação de materiais imersivos e na documentação técnica do projeto, utilizando diferentes softwares de realidade virtual. Participei da organização das etapas do projeto, integrando ferramentas digitais e aplicando conhecimentos em gestão de demandas para garantir uma experiência eficiente e envolvente.</p>
+  </section>
+  <section id="contato" class="card contact">
+    <h2>Contato</h2>
+    <p><strong>Telefone:</strong> <a href="tel:+5583999644103">(83) 99964-4103</a></p>
+    <p><strong>E-mail:</strong> <a href="mailto:sofiacavalcant3@gmail.com">sofiacavalcant3@gmail.com</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/sofiacavalcant" target="_blank">github.com/sofiacavalcant</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sofia-cavalcantebg" target="_blank">linkedin.com/in/sofia-cavalcantebg</a></p>
+  </section>
+</main>
+<footer>
+  © 2025 — Sofia Cavalcante
+</footer>
+<script>
+const symbols = ["</>", "{ }", "[ ]", "( )", ";", ":=", "++", "==", "&&", "| |", "/* */", "<?>"];
+const background = document.getElementById('background');
+for(let i=0;i<50;i++){
+  const span = document.createElement('span');
+  span.classList.add('symbol');
+  span.textContent = symbols[Math.floor(Math.random()*symbols.length)];
+  span.style.left = Math.random()*100 + "vw";
+  span.style.top = Math.random()*80 + "vh";
+  span.style.fontSize = 20 + Math.random()*60 + "px";
+  span.style.color = "rgba(75,0,130,0.5)";
+  span.style.animation = `float ${10 + Math.random()*20}s linear infinite`;
+  background.appendChild(span);
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
